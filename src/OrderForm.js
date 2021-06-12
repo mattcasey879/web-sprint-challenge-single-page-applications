@@ -20,7 +20,7 @@ export default function OrderForm(props) {
 
                 <div>{errors.name}</div>
                 <div>{errors.size}</div>
-                <input type='text'name='name' value={values.name} onChange={onChange} placeholder='Name Of person picking up'></input>
+                <input type='text'name='name' id='name-input'value={values.name} onChange={onChange} placeholder='Name Of person picking up'></input>
                 <label>
                 <select name='size' value={values.size} onChange={onChange} id='size-dropdown'>
                     <option>Select size</option>
