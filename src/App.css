@@ -1,38 +1,68 @@
-.App {
+.App #Lambda-Eats {
   text-align: center;
+  font-size: 4rem;
+  color: #EE3A43;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App nav{
+  display: flex;
+  justify-content: space-evenly;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App nav .home-buttons {
+  padding: 5% 0 0 30%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App nav .home-buttons .buttons {
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-left: 3px;
+}
+
+.errors {
+  color:red 
+}
+
+img {
+  width: 50%;
+  height: 300px;
+  margin-left: 40%;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.img-container p{
+  text-align: right;
+  padding-right: 20%;
+  padding-bottom: 6%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.home-pg-container h3{
+  font-size: 2rem;
+  color: #EE3A43;
+  padding-left: 5%;
+}
+
+.App {
+  background: repeating-linear-gradient(#221e1f, #23292e 49.9%, #23282c 50.1%, #cb4949 100%);
+  height: 100%;
+}
+
+#pizza-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 25% 0 25%;
+  border: black solid 3px;
+}
+#pizza-form {
+  padding-top: 5%;
+  margin-bottom: 10%;
+}
+#name-input {
+  width: 30%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#pizza-form h3{
+  text-align: center;
+  font-size: 2rem;
 }

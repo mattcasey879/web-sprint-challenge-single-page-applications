@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Route, Switch, Link } from 'react-router-dom'
 import Home from './Home'
 import OrderForm from './OrderForm'
-
+import './App.css';
 import * as yup from 'yup'
 import schema from './validation/schema';
 
@@ -68,10 +68,10 @@ useEffect(() => {
   return (
     <div className= 'App'>
       <nav>
-        <h1>Lambda Eats</h1>
-        <div>
-          <Link to='/'><button>Home</button></Link>
-          <Link to='/pizza'><button id= 'order-pizza'>Order Pizza</button></Link>
+        <h1 id='Lambda-Eats'>Lambda Eats</h1>
+        <div className='home-buttons'>
+          <Link to='/'><button className='buttons' id='home'>Home</button></Link>
+          <Link to='/pizza'><button className='buttons' id= 'order-pizza'>Order Pizza</button></Link>
         </div>
       </nav>
       <Switch> 
